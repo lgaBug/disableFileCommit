@@ -1,9 +1,10 @@
-package com.liuga;
+package com.liuga.action;
 
 import com.intellij.openapi.project.Project;
 import com.intellij.openapi.ui.DialogWrapper;
 import com.intellij.ui.components.JBList;
 import com.intellij.ui.components.JBScrollPane;
+import com.liuga.state.DisabledFilesState;
 import org.jetbrains.annotations.Nullable;
 
 import javax.swing.*;

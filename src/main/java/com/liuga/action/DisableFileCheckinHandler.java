@@ -1,10 +1,11 @@
-package com.liuga;
+package com.liuga.action;
 
 import com.intellij.openapi.ui.Messages;
 import com.intellij.openapi.vcs.CheckinProjectPanel;
 import com.intellij.openapi.vcs.changes.Change;
 import com.intellij.openapi.vcs.changes.ContentRevision;
 import com.intellij.openapi.vcs.checkin.CheckinHandler;
+import com.liuga.state.DisabledFilesState;
 
 import java.util.ArrayList;
 import java.util.Collection;

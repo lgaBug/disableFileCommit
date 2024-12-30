@@ -1,10 +1,11 @@
-package com.liuga;
+package com.liuga.action;
 
 import com.intellij.openapi.actionSystem.AnAction;
 import com.intellij.openapi.actionSystem.AnActionEvent;
 import com.intellij.openapi.actionSystem.CommonDataKeys;
 import com.intellij.openapi.project.Project;
 import com.intellij.openapi.vfs.VirtualFile;
+import com.liuga.state.DisabledFilesState;
 
 import java.util.ArrayList;
 import java.util.List;

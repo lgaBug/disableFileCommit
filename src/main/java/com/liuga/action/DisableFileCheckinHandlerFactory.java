@@ -1,4 +1,4 @@
-package com.liuga;
+package com.liuga.action;
 
 import com.intellij.openapi.vcs.CheckinProjectPanel;
 import com.intellij.openapi.vcs.changes.CommitContext;

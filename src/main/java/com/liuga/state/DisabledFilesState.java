@@ -1,4 +1,4 @@
-package com.liuga;
+package com.liuga.state;
 
 import com.intellij.openapi.components.*;
 import com.intellij.util.xmlb.XmlSerializerUtil;
