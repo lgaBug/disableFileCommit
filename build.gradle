@@ -21,7 +21,7 @@ dependencies {
 }
 
 intellij {
-    version = '2024.1.4'
+    version = '2023.1'
 }
 
 tasks.withType(JavaCompile) {

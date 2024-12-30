@@ -26,12 +26,13 @@ public class DisableFileCheckinHandler extends CheckinHandler {
         for (Change change : changes) {
             ContentRevision afterRevision = change.getAfterRevision();
             ContentRevision beforeRevision = change.getBeforeRevision();
-
+            
+            
             boolean isDisabled = false;
-            if (afterRevision != null && state.disabledFiles.contains(afterRevision.getFile().getPath())) {
+            if (afterRevision != null && state.disabledFiles.contains(afterRevision.getFile().getPath().replace(myPanel.getProject().getBasePath() + "/", ""))) {
                 isDisabled = true;
             }
-            if (beforeRevision != null && state.disabledFiles.contains(beforeRevision.getFile().getPath())) {
+            if (beforeRevision != null && state.disabledFiles.contains(beforeRevision.getFile().getPath().replace(myPanel.getProject().getBasePath() + "/", ""))) {
                 isDisabled = true;
             }
 

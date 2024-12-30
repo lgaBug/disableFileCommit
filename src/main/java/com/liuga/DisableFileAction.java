@@ -18,7 +18,7 @@ public class DisableFileAction extends AnAction {
             List<VirtualFile> selectedFiles = getSelectedFiles(e);
             if (selectedFiles!= null) {
                 for (VirtualFile file : selectedFiles) {
-                    String filePath = file.getPath();
+                    String filePath = file.getPath().replace(project.getBasePath() + "/", "");
                     DisabledFilesState state = DisabledFilesState.getInstance();
                     if (state.disabledFiles.contains(filePath)) {
                         state.disabledFiles.remove(filePath);
